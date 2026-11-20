@@ -1,0 +1,17 @@
+{
+  "region": "北桥",
+  "zone": "Asia/Shanghai",
+  "sites": {
+    "北桥点": [
+      "N1",
+      "N2"
+    ],
+    "南站点": [
+      "S1"
+    ]
+  },
+  "fallback": {
+    "zh": "服务信息调整中，请联系服务台分机 702。",
+    "en": "Contact the service desk at extension 702."
+  }
+}

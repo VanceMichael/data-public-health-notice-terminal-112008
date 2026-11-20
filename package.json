@@ -1,0 +1,16 @@
+{
+  "name": "public-health-notice-terminal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.23.4"
+  },
+  "scripts": {
+    "start": "node sources/source.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

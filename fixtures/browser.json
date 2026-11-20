@@ -1,0 +1,12 @@
+{
+  "home": "/screens",
+  "link": "北桥设备组",
+  "heading": "北桥设备组",
+  "label": "公告识别码",
+  "input": "W6-H",
+  "submit": "查看换页预览",
+  "confirmation": "请核对本次公告、语言与设备页面。",
+  "next": "reconnect",
+  "changed": "N1 已重连，待办仍有 P41",
+  "entered": "公告 W6-H，设备 N1，语言 zh"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "step": "urgent",
+    "path": "/bulletins/W6",
+    "field": null,
+    "value": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p><p>W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。</p><p>U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。</p></main></html>"
+  },
+  {
+    "step": "display",
+    "path": "/screens/pending",
+    "field": null,
+    "value": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>换页待办</title><main><h1>换页待办</h1><p>P41，撤销已确认。</p><p>P55，N1，H3，英语，已显示。</p></main></html>"
+  }
+]

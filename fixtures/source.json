@@ -1,0 +1,139 @@
+{
+  "steps": [
+    "primary",
+    "stale",
+    "urgent",
+    "reconnect",
+    "display"
+  ],
+  "routes": {
+    "common": {
+      "GET /bulletins": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>市级冬季服务公告</title><main><h1>市级冬季服务公告</h1><a href=\"/bulletins/W6\">北桥冬季服务 W6</a></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /bulletins/W6": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /translation": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>语言页</title><main><h1>语言页</h1><a href=\"/translation/en\">北桥英语页（本地演练）</a></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /translation/en": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥英语页</title><main><h1>北桥英语页</h1><p>W6-N，R1，已审。 Desk extension 702.</p><p>W6-H，H1，已审。 North Bridge desk open from 09:00 to 16:00.</p><p>W6-S，S2，已审。 South annex open from 10:00 to 15:00.</p><p>W6-H，H2，待审。 New North Bridge desk from noon.</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>屏控中心</title><main><h1>屏控中心</h1><a href=\"/screens/north\">北桥设备组</a> · <a href=\"/screens/south\">南站设备组</a> · <a href=\"/screens/pending\">换页待办</a></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/south": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>南站设备组</title><main><h1>南站设备组</h1><p>S1 已显示 S2，支持整组启用。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "POST /screens/preview": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>换页预览</title><main><h1>换页预览</h1><p>请核对本次公告、语言与设备页面。</p><p>公告 {{notice}}，设备 {{terminal}}，语言 {{locale}}</p><pre>{{content}}</pre><form method=\"post\" action=\"/screens/register\"><label>主管确认码<input name=\"approval\"></label><button>登记换页</button></form></main></html>",
+        "type": "text/html; charset=utf-8",
+        "formFields": [
+          "notice",
+          "terminal",
+          "locale",
+          "content"
+        ]
+      },
+      "POST /screens/register": {
+        "status": 202,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>已登记</title><main><h1>已登记</h1><p>已登记，等待设备确认。</p><a href=\"/screens/pending\">换页待办</a></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/pending": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>换页待办</title><main><h1>换页待办</h1><p>P41，N1，H1，英语，待执行。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "POST /screens/cancel/P41": {
+        "status": 202,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>旧换页已撤</title><main><h1>旧换页已撤</h1><p>P41 仍待设备确认撤销。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    },
+    "primary": {
+      "GET /screens/north": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥设备组</title><main><h1>北桥设备组</h1><p>N1 在线，当前显示旧版 H1</p><p>N1 仅支持单页换页，N2 支持整组启用。</p><form action=\"/screens/preview\" method=\"post\"><label>公告识别码<input name=\"notice\"></label><label>设备<input name=\"terminal\" value=\"N1\"></label><label>语言<select name=\"locale\"><option value=\"zh\">中文</option><option value=\"en\">英语</option></select></label><label>页面文字<textarea name=\"content\"></textarea></label><button>查看换页预览</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    },
+    "stale": {
+      "GET /bulletins/W6": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p><p>W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/north": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥设备组</title><main><h1>北桥设备组</h1><p>N1 离线，挂起旧换页 P41</p><p>N1 仅支持单页换页，N2 支持整组启用。</p><form action=\"/screens/preview\" method=\"post\"><label>公告识别码<input name=\"notice\"></label><label>设备<input name=\"terminal\" value=\"N1\"></label><label>语言<select name=\"locale\"><option value=\"zh\">中文</option><option value=\"en\">英语</option></select></label><label>页面文字<textarea name=\"content\"></textarea></label><button>查看换页预览</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    },
+    "urgent": {
+      "GET /bulletins/W6": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p><p>W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。</p><p>U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/north": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥设备组</title><main><h1>北桥设备组</h1><p>北桥停办已生效，N1 仍离线</p><p>N1 仅支持单页换页，N2 支持整组启用。</p><form action=\"/screens/preview\" method=\"post\"><label>公告识别码<input name=\"notice\"></label><label>设备<input name=\"terminal\" value=\"N1\"></label><label>语言<select name=\"locale\"><option value=\"zh\">中文</option><option value=\"en\">英语</option></select></label><label>页面文字<textarea name=\"content\"></textarea></label><button>查看换页预览</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    },
+    "reconnect": {
+      "GET /bulletins/W6": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p><p>W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。</p><p>U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/north": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥设备组</title><main><h1>北桥设备组</h1><p>N1 已重连，待办仍有 P41</p><p>N1 仅支持单页换页，N2 支持整组启用。</p><form action=\"/screens/preview\" method=\"post\"><label>公告识别码<input name=\"notice\"></label><label>设备<input name=\"terminal\" value=\"N1\"></label><label>语言<select name=\"locale\"><option value=\"zh\">中文</option><option value=\"en\">英语</option></select></label><label>页面文字<textarea name=\"content\"></textarea></label><button>查看换页预览</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/pending": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>换页待办</title><main><h1>换页待办</h1><p>P41，N1，H1，英语，设备已接收未显示。</p><form method=\"post\" action=\"/screens/cancel/P41\"><button>取消旧换页 P41</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    },
+    "display": {
+      "GET /bulletins/W6": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥冬季服务 W6</title><main><h1>北桥冬季服务 W6</h1><p>W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。</p><p>W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。</p><p>W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。</p><p>W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。</p><p>U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /translation/en": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥英语页</title><main><h1>北桥英语页</h1><p>W6-N，R1，已审。 Desk extension 702.</p><p>W6-S，S2，已审。 South annex open from 10:00 to 15:00.</p><p>W6-H，H3，已审。 North Bridge desk closed today; contact extension 702.</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/north": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>北桥设备组</title><main><h1>北桥设备组</h1><p>N1 已显示 H3，N2 等待换页确认</p><p>N1 仅支持单页换页，N2 支持整组启用。</p><form action=\"/screens/preview\" method=\"post\"><label>公告识别码<input name=\"notice\"></label><label>设备<input name=\"terminal\" value=\"N1\"></label><label>语言<select name=\"locale\"><option value=\"zh\">中文</option><option value=\"en\">英语</option></select></label><label>页面文字<textarea name=\"content\"></textarea></label><button>查看换页预览</button></form></main></html>",
+        "type": "text/html; charset=utf-8"
+      },
+      "GET /screens/pending": {
+        "status": 200,
+        "body": "<!doctype html><html lang=\"zh-CN\"><meta charset=\"utf-8\"><title>换页待办</title><main><h1>换页待办</h1><p>P41，撤销已确认。</p><p>P55，N1，H3，英语，已显示。</p></main></html>",
+        "type": "text/html; charset=utf-8"
+      }
+    }
+  }
+}
