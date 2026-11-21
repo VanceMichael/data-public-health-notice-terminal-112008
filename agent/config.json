@@ -1,0 +1,21 @@
+{
+  "baseUrl": "http://127.0.0.1:4173",
+  "portal": {
+    "approvalCode": "DRILL-SUPERVISOR-0417"
+  },
+  "terminals": {
+    "N1": {
+      "locale": "en"
+    },
+    "N2": {
+      "locale": "en"
+    },
+    "S1": {
+      "locale": "zh"
+    }
+  },
+  "localeFallbackOrder": [
+    "zh",
+    "en"
+  ]
+}
