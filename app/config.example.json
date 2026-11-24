@@ -1,0 +1,41 @@
+{
+  "baseUrl": "http://127.0.0.1:4173",
+  "bulletinsHome": "/bulletins",
+  "translationHome": "/translation",
+  "screensHome": "/screens",
+  "pendingPath": "/screens/pending",
+  "deskFile": "fixtures/desk.json",
+  "approvalCode": "DRILL-702",
+  "bulletinYear": 2026,
+  "terminalLocale": {
+    "N1": "en",
+    "N2": "zh",
+    "S1": "zh"
+  },
+  "groups": {
+    "/screens/north": { "site": "北桥点" },
+    "/screens/south": { "site": "南站点" }
+  },
+  "localeLabels": {
+    "中文": "zh",
+    "英语": "en"
+  },
+  "phaseTimes": {
+    "primary": "2026-12-08T09:30:00+08:00",
+    "stale": "2026-12-08T12:05:00+08:00",
+    "urgent": "2026-12-08T12:15:00+08:00",
+    "reconnect": "2026-12-08T12:25:00+08:00",
+    "display": "2026-12-08T12:40:00+08:00"
+  },
+  "noticeKeywords": {
+    "suspension": ["停办"],
+    "resumption": ["复行", "恢复开放", "恢复服务"],
+    "migration": ["改到", "迁移", "迁至"],
+    "correction": ["更正", "错字", "勘误"]
+  },
+  "sourceClockControl": {
+    "enabled": true,
+    "path": "/_source_clock"
+  },
+  "login": null
+}

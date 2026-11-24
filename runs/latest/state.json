@@ -1,0 +1,798 @@
+{
+  "phases": [
+    {
+      "phase": "primary",
+      "at": "2026-12-08T09:30:00+08:00",
+      "actions": [],
+      "warnings": [],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|W6-H/H1",
+          "versions": [
+            "R1",
+            "H1"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-H/H1",
+          "versions": [
+            "R1",
+            "H1"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1",
+          "versions": [
+            "R1"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "stale",
+      "at": "2026-12-08T12:05:00+08:00",
+      "actions": [
+        {
+          "type": "register",
+          "terminal": "N1",
+          "noticeId": "W6-H",
+          "evidence": "stale-N1-W6-H"
+        }
+      ],
+      "warnings": [
+        "检测到同范围公告新版本，已按最新原文重建全部待上屏页面，禁止版本混拼"
+      ],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|W6-H/H2",
+          "versions": [
+            "R1",
+            "H2"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-H/H2",
+          "versions": [
+            "R1",
+            "H2"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-S/S2",
+          "versions": [
+            "R1",
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "urgent",
+      "at": "2026-12-08T12:15:00+08:00",
+      "actions": [
+        {
+          "type": "register",
+          "terminal": "N1",
+          "noticeId": "U4",
+          "evidence": "urgent-N1-U4"
+        }
+      ],
+      "warnings": [
+        "检测到同范围公告新版本，已按最新原文重建全部待上屏页面，禁止版本混拼",
+        "终端 N1 的旧换页 P41 需撤销但门户暂无入口，转人工"
+      ],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-S/S2",
+          "versions": [
+            "R1",
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "reconnect",
+      "at": "2026-12-08T12:25:00+08:00",
+      "actions": [
+        {
+          "type": "cancel",
+          "terminal": "N1",
+          "operationId": "P41"
+        },
+        {
+          "type": "register",
+          "terminal": "N1",
+          "noticeId": "U4",
+          "evidence": "reconnect-N1-U4"
+        }
+      ],
+      "warnings": [],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-S/S2",
+          "versions": [
+            "R1",
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "display",
+      "at": "2026-12-08T12:40:00+08:00",
+      "actions": [],
+      "warnings": [],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|U4/H3",
+          "versions": [
+            "R1",
+            "H3"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-S/S2",
+          "versions": [
+            "R1",
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "primary",
+      "at": "2026-12-08T09:30:00+08:00",
+      "actions": [],
+      "warnings": [
+        "检测到同范围公告新版本，已按最新原文重建全部待上屏页面，禁止版本混拼"
+      ],
+      "currentTargets": [
+        {
+          "terminal": "N1",
+          "locale": "en",
+          "signature": "W6-N/R1|W6-H/H1",
+          "versions": [
+            "R1",
+            "H1"
+          ]
+        },
+        {
+          "terminal": "N2",
+          "locale": "zh",
+          "signature": "W6-N/R1|W6-H/H1",
+          "versions": [
+            "R1",
+            "H1"
+          ]
+        },
+        {
+          "terminal": "S1",
+          "locale": "zh",
+          "signature": "W6-N/R1",
+          "versions": [
+            "R1"
+          ]
+        }
+      ]
+    }
+  ],
+  "bulletins": [
+    {
+      "phase": "primary",
+      "at": "2026-12-08T09:30:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        }
+      ]
+    },
+    {
+      "phase": "stale",
+      "at": "2026-12-08T12:05:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。",
+          "effectiveAt": "2026-12-08T04:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H2",
+          "noticeType": "migration"
+        }
+      ]
+    },
+    {
+      "phase": "urgent",
+      "at": "2026-12-08T12:15:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。",
+          "effectiveAt": "2026-12-08T04:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H2",
+          "noticeType": "migration"
+        },
+        {
+          "id": "U4",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。",
+          "effectiveAt": "2026-12-08T04:10:00.000Z",
+          "kind": "service",
+          "refVersion": "H3",
+          "noticeType": "suspension"
+        }
+      ]
+    },
+    {
+      "phase": "reconnect",
+      "at": "2026-12-08T12:25:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。",
+          "effectiveAt": "2026-12-08T04:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H2",
+          "noticeType": "migration"
+        },
+        {
+          "id": "U4",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。",
+          "effectiveAt": "2026-12-08T04:10:00.000Z",
+          "kind": "service",
+          "refVersion": "H3",
+          "noticeType": "suspension"
+        }
+      ]
+    },
+    {
+      "phase": "display",
+      "at": "2026-12-08T12:40:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H2，北桥点，12月8日 12:00 起改到北桥新址。",
+          "effectiveAt": "2026-12-08T04:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H2",
+          "noticeType": "migration"
+        },
+        {
+          "id": "U4",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "U4，原文 H3，北桥点，12月8日 12:10 生效，北桥点当天停办，请联系分机 702。",
+          "effectiveAt": "2026-12-08T04:10:00.000Z",
+          "kind": "service",
+          "refVersion": "H3",
+          "noticeType": "suspension"
+        }
+      ]
+    },
+    {
+      "phase": "primary",
+      "at": "2026-12-08T09:30:00+08:00",
+      "paragraphs": [
+        {
+          "id": "W6-N",
+          "site": null,
+          "allSites": true,
+          "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+          "effectiveAt": null,
+          "kind": "contact",
+          "refVersion": "R1",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "site": "北桥点",
+          "allSites": false,
+          "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+          "effectiveAt": "2026-12-08T01:00:00.000Z",
+          "kind": "service",
+          "refVersion": "H1",
+          "noticeType": "regular"
+        },
+        {
+          "id": "W6-S",
+          "site": "南站点",
+          "allSites": false,
+          "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+          "effectiveAt": "2026-12-08T02:00:00.000Z",
+          "kind": "service",
+          "refVersion": "S2",
+          "noticeType": "regular"
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "W6-N",
+      "refVersion": "R1",
+      "status": "reviewed",
+      "text": "Desk extension 702.",
+      "raw": "W6-N，R1，已审。 Desk extension 702."
+    },
+    {
+      "id": "W6-H",
+      "refVersion": "H1",
+      "status": "reviewed",
+      "text": "North Bridge desk open from 09:00 to 16:00.",
+      "raw": "W6-H，H1，已审。 North Bridge desk open from 09:00 to 16:00."
+    },
+    {
+      "id": "W6-S",
+      "refVersion": "S2",
+      "status": "reviewed",
+      "text": "South annex open from 10:00 to 15:00.",
+      "raw": "W6-S，S2，已审。 South annex open from 10:00 to 15:00."
+    },
+    {
+      "id": "W6-H",
+      "refVersion": "H2",
+      "status": "pending",
+      "text": "New North Bridge desk from noon.",
+      "raw": "W6-H，H2，待审。 New North Bridge desk from noon."
+    },
+    {
+      "id": "W6-H",
+      "refVersion": "H3",
+      "status": "reviewed",
+      "text": "North Bridge desk closed today; contact extension 702.",
+      "raw": "W6-H，H3，已审。 North Bridge desk closed today; contact extension 702."
+    }
+  ],
+  "registrations": [
+    {
+      "terminal": "N1",
+      "site": "北桥点",
+      "locale": "en",
+      "phase": "stale",
+      "noticeId": "W6-H",
+      "targetSignature": "W6-N/R1|W6-H/H2",
+      "blocks": [
+        {
+          "id": "W6-N",
+          "refVersion": "R1",
+          "text": "Desk extension 702.",
+          "status": "reviewed",
+          "translationStatus": "reviewed",
+          "translationParagraphId": "W6-N",
+          "noticeType": "contact"
+        },
+        {
+          "id": "W6-H",
+          "refVersion": "H2",
+          "text": "Contact the service desk at extension 702.",
+          "status": "fallback-config",
+          "translationStatus": "pending-review",
+          "noticeType": "migration"
+        }
+      ],
+      "usesSubstitute": true,
+      "suspended": false,
+      "content": "【北桥点｜en｜服务公告】\n公告来源：/bulletins\n译文来源：/translation\n生成时间（东八区）：2026-12-08T12:05:00+08:00\n[已审译文] W6-N/R1：Desk extension 702.\n[应急替代·译文待补] W6-H/H2：Contact the service desk at extension 702.",
+      "pendingBaseline": [
+        "P41"
+      ],
+      "previewEvidence": "stale-N1-W6-H-preview.html",
+      "receiptEvidence": "stale-N1-W6-H-registered.html",
+      "registeredAt": "2026-11-24T21:22:44.487Z",
+      "confirmed": false
+    },
+    {
+      "terminal": "N1",
+      "site": "北桥点",
+      "locale": "en",
+      "phase": "urgent",
+      "noticeId": "U4",
+      "targetSignature": "W6-N/R1|U4/H3",
+      "blocks": [
+        {
+          "id": "W6-N",
+          "refVersion": "R1",
+          "text": "Desk extension 702.",
+          "status": "reviewed",
+          "translationStatus": "reviewed",
+          "translationParagraphId": "W6-N",
+          "noticeType": "contact"
+        },
+        {
+          "id": "U4",
+          "refVersion": "H3",
+          "text": "Contact the service desk at extension 702.",
+          "status": "fallback-config",
+          "translationStatus": "missing",
+          "noticeType": "suspension"
+        }
+      ],
+      "usesSubstitute": true,
+      "suspended": true,
+      "content": "【北桥点｜en｜当日停办应急页】\n公告来源：/bulletins\n译文来源：/translation\n生成时间（东八区）：2026-12-08T12:15:00+08:00\n[已审译文] W6-N/R1：Desk extension 702.\n[应急替代·译文待补] U4/H3：Contact the service desk at extension 702.",
+      "pendingBaseline": [
+        "P41"
+      ],
+      "previewEvidence": "urgent-N1-U4-preview.html",
+      "receiptEvidence": "urgent-N1-U4-registered.html",
+      "registeredAt": "2026-11-24T21:22:44.987Z",
+      "confirmed": false
+    },
+    {
+      "terminal": "N1",
+      "site": "北桥点",
+      "locale": "en",
+      "phase": "reconnect",
+      "noticeId": "U4",
+      "targetSignature": "W6-N/R1|U4/H3",
+      "blocks": [
+        {
+          "id": "W6-N",
+          "refVersion": "R1",
+          "text": "Desk extension 702.",
+          "status": "reviewed",
+          "translationStatus": "reviewed",
+          "translationParagraphId": "W6-N",
+          "noticeType": "contact"
+        },
+        {
+          "id": "U4",
+          "refVersion": "H3",
+          "text": "Contact the service desk at extension 702.",
+          "status": "fallback-config",
+          "translationStatus": "missing",
+          "noticeType": "suspension"
+        }
+      ],
+      "usesSubstitute": true,
+      "suspended": true,
+      "content": "【北桥点｜en｜当日停办应急页】\n公告来源：/bulletins\n译文来源：/translation\n生成时间（东八区）：2026-12-08T12:25:00+08:00\n[已审译文] W6-N/R1：Desk extension 702.\n[应急替代·译文待补] U4/H3：Contact the service desk at extension 702.",
+      "pendingBaseline": [
+        "P41"
+      ],
+      "previewEvidence": "reconnect-N1-U4-preview.html",
+      "receiptEvidence": "reconnect-N1-U4-registered.html",
+      "registeredAt": "2026-11-24T21:22:45.586Z",
+      "confirmed": false
+    }
+  ],
+  "cancellations": [
+    {
+      "operationId": "P41",
+      "terminal": "N1",
+      "phase": "reconnect",
+      "cancelled": true,
+      "cancelledAt": "2026-11-24T21:22:45.385Z",
+      "confirmed": false
+    }
+  ],
+  "terminals": {
+    "N1": {
+      "terminal": "N1",
+      "site": "北桥点",
+      "locale": "en",
+      "history": [
+        {
+          "at": "2026-12-08T12:05:00+08:00",
+          "action": "register",
+          "noticeId": "W6-H"
+        },
+        {
+          "at": "2026-12-08T12:15:00+08:00",
+          "action": "register",
+          "noticeId": "U4"
+        },
+        {
+          "at": "2026-12-08T12:25:00+08:00",
+          "action": "register",
+          "noticeId": "U4"
+        }
+      ]
+    },
+    "N2": {
+      "terminal": "N2",
+      "site": "北桥点",
+      "locale": "zh",
+      "history": []
+    },
+    "S1": {
+      "terminal": "S1",
+      "site": "南站点",
+      "locale": "zh",
+      "history": []
+    }
+  },
+  "lastBulletinSignature": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。\nW6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。\nW6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+  "lastPending": [
+    {
+      "operationId": "P41",
+      "terminal": "N1",
+      "version": "H1",
+      "locale": "en",
+      "state": "pending",
+      "cancelled": false,
+      "confirmed": false,
+      "raw": "P41，N1，H1，英语，待执行。"
+    }
+  ],
+  "latestClassified": [
+    {
+      "id": "W6-N",
+      "site": null,
+      "allSites": true,
+      "text": "W6-N，联系段 R1，全部服务点，办公时间联系服务台分机 702。",
+      "effectiveAt": null,
+      "kind": "contact",
+      "refVersion": "R1",
+      "noticeType": "contact"
+    },
+    {
+      "id": "W6-H",
+      "site": "北桥点",
+      "allSites": false,
+      "text": "W6-H，原文 H1，北桥点，12月8日 09:00 至 16:00 开放。",
+      "effectiveAt": "2026-12-08T01:00:00.000Z",
+      "kind": "service",
+      "refVersion": "H1",
+      "noticeType": "regular"
+    },
+    {
+      "id": "W6-S",
+      "site": "南站点",
+      "allSites": false,
+      "text": "W6-S，原文 S2，南站点，12月8日 10:00 至 15:00 开放。",
+      "effectiveAt": "2026-12-08T02:00:00.000Z",
+      "kind": "service",
+      "refVersion": "S2",
+      "noticeType": "regular"
+    }
+  ],
+  "lastDevices": [
+    {
+      "terminal": "N1",
+      "offline": false,
+      "reconnected": false,
+      "displayedVersion": "H1",
+      "pendingOperation": null,
+      "awaitingConfirmation": false,
+      "raw": "N1 在线，当前显示旧版 H1",
+      "site": "北桥点",
+      "groupPath": "/screens/north"
+    },
+    {
+      "terminal": "S1",
+      "offline": false,
+      "reconnected": false,
+      "displayedVersion": "S2",
+      "pendingOperation": null,
+      "awaitingConfirmation": false,
+      "raw": "S1 已显示 S2，支持整组启用。",
+      "site": "南站点",
+      "groupPath": "/screens/south"
+    }
+  ]
+}

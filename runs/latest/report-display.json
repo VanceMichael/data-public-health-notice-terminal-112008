@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "generatedAt": "2026-12-08T12:40:00+08:00",
+    "phase": "display",
+    "sites": {
+      "北桥点": {
+        "portalReceived": [
+          "N1"
+        ],
+        "deviceDisplayed": [
+          "N1"
+        ],
+        "substituteInUse": [],
+        "needsManual": [
+          "N2"
+        ]
+      },
+      "南站点": {
+        "portalReceived": [
+          "S1"
+        ],
+        "deviceDisplayed": [
+          "S1"
+        ],
+        "substituteInUse": [],
+        "needsManual": []
+      }
+    }
+  },
+  "bySite": {
+    "北桥点": [
+      {
+        "terminal": "N1",
+        "site": "北桥点",
+        "locale": "en",
+        "portalReceived": true,
+        "deviceDisplayed": true,
+        "substituteInUse": false,
+        "needsManual": false,
+        "pending": {
+          "operationId": "P55",
+          "terminal": "N1",
+          "version": "H3",
+          "locale": "en",
+          "state": "displayed",
+          "cancelled": false,
+          "confirmed": true,
+          "raw": "P55，N1，H3，英语，已显示。"
+        },
+        "registration": {
+          "phase": "reconnect",
+          "noticeId": "U4",
+          "registeredAt": "2026-11-24T21:22:45.586Z",
+          "confirmed": true,
+          "suspended": true,
+          "usesSubstitute": true,
+          "content": "【北桥点｜en｜当日停办应急页】\n公告来源：/bulletins\n译文来源：/translation\n生成时间（东八区）：2026-12-08T12:25:00+08:00\n[已审译文] W6-N/R1：Desk extension 702.\n[应急替代·译文待补] U4/H3：Contact the service desk at extension 702.",
+          "evidence": {
+            "preview": "reconnect-N1-U4-preview.html",
+            "receipt": "reconnect-N1-U4-registered.html"
+          }
+        },
+        "lineage": [
+          {
+            "id": "W6-N",
+            "refVersion": "R1",
+            "displayStatus": "reviewed",
+            "sourcePublishedAt": "2026-12-08T12:40:00+08:00",
+            "sourceEffectiveAt": null,
+            "translation": {
+              "paragraphId": "W6-N",
+              "refVersion": "R1",
+              "status": "reviewed",
+              "raw": "W6-N，R1，已审。 Desk extension 702."
+            }
+          },
+          {
+            "id": "U4",
+            "refVersion": "H3",
+            "displayStatus": "fallback-config",
+            "sourcePublishedAt": "2026-12-08T12:40:00+08:00",
+            "sourceEffectiveAt": "2026-12-08T04:10:00.000Z",
+            "translation": {
+              "paragraphId": "W6-H",
+              "refVersion": "H3",
+              "status": "reviewed",
+              "raw": "W6-H，H3，已审。 North Bridge desk closed today; contact extension 702."
+            }
+          }
+        ]
+      },
+      {
+        "terminal": "N2",
+        "site": "北桥点",
+        "locale": "zh",
+        "portalReceived": false,
+        "deviceDisplayed": false,
+        "substituteInUse": false,
+        "needsManual": true,
+        "pending": null,
+        "registration": null,
+        "lineage": []
+      }
+    ],
+    "南站点": [
+      {
+        "terminal": "S1",
+        "site": "南站点",
+        "locale": "zh",
+        "portalReceived": true,
+        "deviceDisplayed": true,
+        "substituteInUse": false,
+        "needsManual": false,
+        "pending": null,
+        "registration": null,
+        "lineage": []
+      }
+    ]
+  },
+  "warnings": [
+    "检测到同范围公告新版本，已按最新原文重建全部待上屏页面，禁止版本混拼",
+    "检测到同范围公告新版本，已按最新原文重建全部待上屏页面，禁止版本混拼",
+    "终端 N1 的旧换页 P41 需撤销但门户暂无入口，转人工"
+  ]
+}
